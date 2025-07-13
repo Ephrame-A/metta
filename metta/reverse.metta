@@ -6,9 +6,8 @@
             (let* ((($head $tail) (decons-atom $list))
                     ($res (reverse $tail))
                     ($rest (union-atom $res ($head)))
-                    $rest
-                  )
+                  ) $rest
             )
      )
 )
-!(reverse 1)
+!(reverse (A B C D));[(D C B A)]
