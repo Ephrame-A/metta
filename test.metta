@@ -5,9 +5,9 @@
 ! (bind! exp-limit 4)
 ! (bind! child-size 4)
 ! (bind! mutation-prob 0.2)
-! (bind! exp-limit 2)
 
 ! (bind! population (genotype-generate 10))
+! (population)
 ; ! (phenotype (0 1 0 0 0 1 1 0 0) start)
 ; ! (evaluation (2 (add x)) test-pairs)
 ; ; ! (mutate population mutation-prob () exp-limit)
@@ -22,4 +22,3 @@
 ;         )
 
 ; ! (main (((0.0) (0 1 0 0 0 1 1 0 0)) ((0.0) (0 1 0 0 0 1 1 0 0))) 4)
-! (selection (((3.0) (0 0 1 2 2)) ((0.0) (0 0 0 0 1)) ((6.0) (0 9 0 0 1)) ((0.0) (5 0 0 0 1))) 4 1)
