@@ -16,6 +16,6 @@
 )
 
 
-!(subset_finder (A B C D E F G H 1 2 J K))
+!(subset_finder (A B C D E))
 
 
