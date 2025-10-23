@@ -1,7 +1,7 @@
 # Pathfind: Flight Route Finder
 
 ## Overview
-Pathfind is a hybrid MeTTa/Python project for finding optimal flight routes between cities based on duration, cost, distance, or a combined score. It uses symbolic reasoning (MeTTa) and a simple web interface (Python/Flask) to let users query and visualize flight paths from a dataset.
+Pathfind is a hybrid MeTTa/Python project for finding optimal flight routes between cities based on duration, cost, distance, or a combined score. It uses symbolic reasoning (MeTTa) and a simple web interface (Python/FastAPI) to let users query and visualize flight paths from a dataset.
 
 ## Features
 - **Flexible pathfinding:** Find all possible routes or the shortest route between cities.
@@ -33,15 +33,15 @@ pip install -r requirements.txt
 
 ### 2. Run the web server
 ```bash
-uvicorn main:app --reload
+python main.py
 ```
 
 ### 3. Open the UI
-Visit [http://localhost:5000](http://localhost:5000) in your browser.
+Visit [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## How It Works
 - **MeTTa engine:** The core pathfinding logic is in `main.metta`. It loads flight data from `data.metta` and computes all possible paths, then selects the optimal one based on your chosen metric.
-- **Python/Flask:** Handles user requests, invokes MeTTa logic, and serves the results via a simple web page.
+- **Python/FastAPI:** Handles user requests, invokes MeTTa logic, and serves the results via a simple web page.
 
 ## Data Format
 Flight data is stored in `data.metta` as facts:
